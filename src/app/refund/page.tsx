@@ -1,7 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Refund Policy — App Building Blueprint',
+  title: 'Refund Policy',
+  alternates: {
+    canonical: 'https://appbuildingblueprint.com/refund',
+  },
+  robots: {
+    index: false,
+  },
 }
 
 export default function RefundPage() {

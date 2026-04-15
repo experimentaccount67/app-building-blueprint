@@ -1,7 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy — App Building Blueprint',
+  title: 'Privacy Policy',
+  alternates: {
+    canonical: 'https://appbuildingblueprint.com/privacy',
+  },
+  robots: {
+    index: false,
+  },
 }
 
 export default function PrivacyPage() {

@@ -1,7 +1,13 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Terms of Service — App Building Blueprint',
+  title: 'Terms of Service',
+  alternates: {
+    canonical: 'https://appbuildingblueprint.com/terms',
+  },
+  robots: {
+    index: false,
+  },
 }
 
 export default function TermsPage() {
