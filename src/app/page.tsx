@@ -366,7 +366,7 @@ export default function LandingPage() {
           <span style={{ color: '#334155' }}>
             © {new Date().getFullYear()} App Building Blueprint
           </span>
-          <a href="mailto:support@appbuildingblueprint.com" style={{ color: '#475569', textDecoration: 'none' }}>support@appbuildingblueprint.com</a>
+          <a href="mailto:support@appbuildingblueprint.com" style={{ color: '#94a3b8', textDecoration: 'none' }} onMouseEnter={e => (e.currentTarget.style.color = '#22d3ee')} onMouseLeave={e => (e.currentTarget.style.color = '#94a3b8')}>support@appbuildingblueprint.com</a>
         </div>
       </footer>
 
