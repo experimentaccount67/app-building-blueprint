@@ -168,14 +168,17 @@ export default function ChecklistApp() {
             <span style={{ color: '#64748b', fontWeight: 400, fontSize: 13 }}>←</span>
             App Building Blueprint
           </Link>
-          <Link href="/#pricing" style={{
-            fontFamily: "'Space Mono', monospace", fontSize: 12, fontWeight: 700,
-            color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
-            padding: '7px 18px', borderRadius: 8, textDecoration: 'none',
-            letterSpacing: '0.02em',
-          }}>
+          <button
+            onClick={() => (window as any).Tally?.openPopup('EkbKKr')}
+            style={{
+              fontFamily: "'Space Mono', monospace", fontSize: 12, fontWeight: 700,
+              color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
+              padding: '7px 18px', borderRadius: 8, border: 'none',
+              letterSpacing: '0.02em', cursor: 'pointer',
+            }}
+          >
             Get the Blueprint →
-          </Link>
+          </button>
         </div>
       </nav>
 

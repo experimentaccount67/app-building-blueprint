@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CheckoutButton from '@/components/CheckoutButton'
 
 // ─── Section data ────────────────────────────────────────────────────────────
 
@@ -74,14 +75,14 @@ export default function LandingPage() {
           <span style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 17, letterSpacing: '-0.02em', color: '#fff' }}>
             App Building Blueprint
           </span>
-          <Link href="/checklist" style={{
+          <CheckoutButton style={{
             fontFamily: 'var(--font-space-mono)', fontSize: 13, fontWeight: 700,
             color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
-            padding: '8px 20px', borderRadius: 8, textDecoration: 'none',
+            padding: '8px 20px', borderRadius: 8,
             letterSpacing: '0.02em',
           }}>
             Get the Blueprint →
-          </Link>
+          </CheckoutButton>
         </div>
       </nav>
 
@@ -163,14 +164,14 @@ export default function LandingPage() {
 
         {/* CTA — below preview card */}
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 36 }}>
-          <Link href="/checklist" style={{
+          <CheckoutButton style={{
             fontFamily: 'var(--font-syne)', fontWeight: 700, fontSize: 16,
             color: '#0a0a0f', background: 'linear-gradient(135deg, #a78bfa, #22d3ee)',
-            padding: '16px 40px', borderRadius: 12, textDecoration: 'none',
+            padding: '16px 40px', borderRadius: 12,
             display: 'inline-block', letterSpacing: '-0.01em',
           }}>
             Get the Blueprint →
-          </Link>
+          </CheckoutButton>
         </div>
       </section>
 
@@ -303,15 +304,15 @@ export default function LandingPage() {
             </div>
 
             {/* CTA */}
-            <Link href="/checklist" style={{
-              display: 'block', textAlign: 'center',
+            <CheckoutButton style={{
+              display: 'block', textAlign: 'center', width: '100%',
               fontFamily: 'var(--font-syne)', fontWeight: 700, fontSize: 17,
               color: '#0a0a0f', background: 'linear-gradient(135deg, #a78bfa, #22d3ee)',
-              padding: '18px 32px', borderRadius: 12, textDecoration: 'none',
+              padding: '18px 32px', borderRadius: 12,
               letterSpacing: '-0.01em',
             }}>
               Get the Blueprint →
-            </Link>
+            </CheckoutButton>
             <p style={{ textAlign: 'center', color: '#475569', fontSize: 12, margin: '14px 0 0', fontFamily: 'var(--font-space-mono)' }}>
               Instant access · No account needed
             </p>

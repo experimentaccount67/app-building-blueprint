@@ -9,23 +9,10 @@ interface CheckoutButtonProps {
 
 export default function CheckoutButton({ style, children }: CheckoutButtonProps) {
   const handleClick = () => {
-    const paddle = (window as any).Paddle
-    if (!paddle) {
-      console.error('Paddle not loaded yet')
-      return
+    const tally = (window as any).Tally
+    if (tally) {
+      tally.openPopup('EkbKKr')
     }
-
-    paddle.Checkout.open({
-      items: [
-        {
-          priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID!,
-          quantity: 1,
-        },
-      ],
-      settings: {
-        successUrl: `${window.location.origin}/success`,
-      },
-    })
   }
 
   return (

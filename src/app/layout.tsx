@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Space_Mono, Syne } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import PaddleProvider from '@/components/PaddleProvider'
 
@@ -75,6 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${syne.variable} ${spaceMono.variable}`}>
       <body style={{ margin: 0, padding: 0, background: '#0a0a0f' }}>
+        <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
         <PaddleProvider />
         {children}
       </body>
