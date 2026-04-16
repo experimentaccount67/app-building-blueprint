@@ -3,6 +3,7 @@ import { Space_Mono, Syne } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import PaddleProvider from '@/components/PaddleProvider'
+import { Analytics } from '@vercel/analytics/next'
 
 const syne = Syne({
   variable: '--font-syne',
@@ -79,6 +80,7 @@ export default function RootLayout({
         <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
         <PaddleProvider />
         {children}
+        <Analytics />
       </body>
     </html>
   )
