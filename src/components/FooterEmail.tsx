@@ -1,30 +1,37 @@
 'use client'
 
-import { useState } from 'react'
+declare global {
+  interface Window {
+    Tally?: {
+      openPopup: (formId: string, options?: Record<string, unknown>) => void
+    }
+  }
+}
 
 export default function FooterEmail() {
-  const email = 'support@appbuildingblueprint.com'
-  const [copied, setCopied] = useState(false)
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Copy to clipboard as a reliable fallback
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(email).then(() => {
-        setCopied(true)
-        setTimeout(() => setCopied(false), 2000)
-      }).catch(() => {})
+  const handleContact = () => {
+    if (typeof window !== 'undefined' && window.Tally) {
+      window.Tally.openPopup('A7bzXB')
     }
-    // Don't preventDefault — let the mailto: still try to open
   }
 
   return (
-    <a
-      href={`mailto:${email}`}
-      onClick={handleClick}
-      className="footer-email"
-      title="Click to copy email address"
+    <button
+      onClick={handleContact}
+      style={{
+        background: 'none',
+        border: 'none',
+        color: '#64748b',
+        fontFamily: 'var(--font-space-mono)',
+        fontSize: 12,
+        cursor: 'pointer',
+        padding: 0,
+        transition: 'color 0.2s',
+      }}
+      onMouseEnter={e => (e.currentTarget.style.color = '#94a3b8')}
+      onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}
     >
-      {copied ? 'Copied to clipboard!' : email}
-    </a>
+      Contact
+    </button>
   )
 }
