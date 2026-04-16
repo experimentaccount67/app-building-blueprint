@@ -361,6 +361,8 @@ export default function LandingPage() {
         padding: '36px 24px',
         fontFamily: 'var(--font-space-mono)',
         fontSize: 12,
+        position: 'relative',
+        zIndex: 10,
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
           <span style={{ color: '#334155' }}>
