@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import CheckoutButton from '@/components/CheckoutButton'
+import FooterEmail from '@/components/FooterEmail'
 
 // ─── Section data ────────────────────────────────────────────────────────────
 
@@ -368,7 +369,7 @@ export default function LandingPage() {
           <span style={{ color: '#334155' }}>
             © {new Date().getFullYear()} App Building Blueprint
           </span>
-          <a href="mailto:support@appbuildingblueprint.com" className="footer-email">support@appbuildingblueprint.com</a>
+          <FooterEmail />
         </div>
       </footer>
 
