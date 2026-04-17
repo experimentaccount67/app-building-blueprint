@@ -77,10 +77,10 @@ export default function LandingPage() {
             App Building Blueprint
           </span>
           <CheckoutButton style={{
-            fontFamily: 'var(--font-space-mono)', fontSize: 13, fontWeight: 700,
+            fontFamily: 'var(--font-syne)', fontSize: 13, fontWeight: 700,
             color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
             padding: '8px 20px', borderRadius: 8,
-            letterSpacing: '0.02em',
+            letterSpacing: '-0.01em',
           }}>
             Get the Blueprint →
           </CheckoutButton>
@@ -93,7 +93,7 @@ export default function LandingPage() {
         <h1 style={{
           fontFamily: 'var(--font-syne)', fontWeight: 800, textAlign: 'center',
           fontSize: 'clamp(42px, 7vw, 80px)', lineHeight: 1.05, letterSpacing: '-0.03em',
-          margin: '0 0 24px',
+          margin: '0 0 24px', transform: 'scaleX(0.88)', transformOrigin: 'center',
         }}>
           <span style={{ color: '#fff' }}>Ship your app</span>
           <br />
@@ -105,16 +105,9 @@ export default function LandingPage() {
         {/* Subheadline */}
         <p style={{
           textAlign: 'center', color: '#94a3b8', fontSize: 'clamp(16px, 2.5vw, 19px)',
-          lineHeight: 1.7, maxWidth: 520, margin: '0 auto 12px',
+          lineHeight: 1.7, maxWidth: 520, margin: '0 auto 48px',
         }}>
           The production checklist for builders who ship right.
-        </p>
-        <p style={{
-          textAlign: 'center', color: '#475569', fontSize: 'clamp(14px, 2vw, 16px)',
-          lineHeight: 1.6, maxWidth: 520, margin: '0 auto 48px',
-          fontFamily: 'var(--font-space-mono)',
-        }}>
-          13 sections · 100+ items · Nothing missing.
         </p>
 
         {/* Preview card */}
@@ -179,13 +172,10 @@ export default function LandingPage() {
       {/* ── Problem ──────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '80px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.1em', color: '#64748b', textTransform: 'uppercase' }}>The problem</span>
+          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>The problem</span>
           <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
             Most vibe-coded apps aren&apos;t<br />ready to ship.
           </h2>
-          <p style={{ color: '#64748b', fontSize: 16, maxWidth: 500, margin: '0 auto', lineHeight: 1.6 }}>
-            Building fast doesn&apos;t mean you&apos;re ready to ship.
-          </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 16 }}>
@@ -205,13 +195,10 @@ export default function LandingPage() {
       {/* ── What's Inside ────────────────────────────────────────────────── */}
       <section id="whats-inside" style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '80px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.1em', color: '#64748b', textTransform: 'uppercase' }}>What&apos;s inside</span>
+          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>What&apos;s inside</span>
           <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
             Every layer. Nothing missing.
           </h2>
-          <p style={{ color: '#64748b', fontSize: 16, maxWidth: 520, margin: '0 auto', lineHeight: 1.6 }}>
-            Every layer of your app covered — from UI to deployment, nothing skipped.
-          </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 14 }}>
@@ -251,13 +238,10 @@ export default function LandingPage() {
       {/* ── Pricing ──────────────────────────────────────────────────────── */}
       <section id="pricing" style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '100px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.1em', color: '#64748b', textTransform: 'uppercase' }}>Pricing</span>
+          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>Pricing</span>
           <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
             One price. Yours forever.
           </h2>
-          <p style={{ color: '#64748b', fontSize: 16, maxWidth: 400, margin: '0 auto', lineHeight: 1.6 }}>
-            No subscription, no account needed.
-          </p>
         </div>
 
         <div style={{ maxWidth: 480, margin: '0 auto' }}>
@@ -279,12 +263,9 @@ export default function LandingPage() {
             </div>
 
             {/* Price */}
-            <div style={{ marginBottom: 8 }}>
+            <div style={{ marginBottom: 32 }}>
               <span style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 56, color: '#fff', letterSpacing: '-0.04em' }}>$19</span>
             </div>
-            <p style={{ color: '#64748b', fontSize: 14, margin: '0 0 32px', lineHeight: 1.5 }}>
-              Pay once. Use it on every project you build, forever.
-            </p>
 
             {/* Feature list */}
             <div style={{ marginBottom: 32, display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -314,9 +295,6 @@ export default function LandingPage() {
             }}>
               Get the Blueprint →
             </CheckoutButton>
-            <p style={{ textAlign: 'center', color: '#475569', fontSize: 12, margin: '14px 0 0', fontFamily: 'var(--font-space-mono)' }}>
-              Instant access · No account needed
-            </p>
           </div>
         </div>
       </section>
@@ -324,7 +302,7 @@ export default function LandingPage() {
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', zIndex: 1, maxWidth: 720, margin: '0 auto', padding: '0 24px 100px' }}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.1em', color: '#64748b', textTransform: 'uppercase' }}>FAQ</span>
+          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>FAQ</span>
           <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
             Questions
           </h2>
