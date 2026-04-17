@@ -73,11 +73,11 @@ export default function LandingPage() {
         WebkitBackdropFilter: 'blur(16px)',
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', height: 60, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 17, letterSpacing: '-0.02em', color: '#fff' }}>
+          <span style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 17, letterSpacing: '-0.02em', color: '#fff', display: 'inline-block', transform: 'scaleX(0.88)', transformOrigin: 'left' }}>
             App Building Blueprint
           </span>
           <CheckoutButton style={{
-            fontFamily: 'var(--font-syne)', fontSize: 13, fontWeight: 700,
+            fontFamily: 'var(--font-syne)', fontSize: 16, fontWeight: 700,
             color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
             padding: '8px 20px', borderRadius: 8,
             letterSpacing: '-0.01em',
@@ -101,14 +101,6 @@ export default function LandingPage() {
             without missing a thing.
           </span>
         </h1>
-
-        {/* Subheadline */}
-        <p style={{
-          textAlign: 'center', color: '#94a3b8', fontSize: 'clamp(16px, 2.5vw, 19px)',
-          lineHeight: 1.7, maxWidth: 520, margin: '0 auto 48px',
-        }}>
-          The production checklist for builders who ship right.
-        </p>
 
         {/* Preview card */}
         <div style={{ marginTop: 48, maxWidth: 780, margin: '48px auto 0' }}>
@@ -172,8 +164,7 @@ export default function LandingPage() {
       {/* ── Problem ──────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '80px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>The problem</span>
-          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 0', transform: 'scaleX(0.88)', transformOrigin: 'center' }}>
             Most vibe-coded apps aren&apos;t<br />ready to ship.
           </h2>
         </div>
@@ -195,8 +186,7 @@ export default function LandingPage() {
       {/* ── What's Inside ────────────────────────────────────────────────── */}
       <section id="whats-inside" style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '80px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>What&apos;s inside</span>
-          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 0', transform: 'scaleX(0.88)', transformOrigin: 'center' }}>
             Every layer. Nothing missing.
           </h2>
         </div>
@@ -238,8 +228,7 @@ export default function LandingPage() {
       {/* ── Pricing ──────────────────────────────────────────────────────── */}
       <section id="pricing" style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '100px 24px' }}>
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>Pricing</span>
-          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 48px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 0', transform: 'scaleX(0.88)', transformOrigin: 'center' }}>
             One price. Yours forever.
           </h2>
         </div>
@@ -288,7 +277,7 @@ export default function LandingPage() {
             {/* CTA */}
             <CheckoutButton style={{
               display: 'block', textAlign: 'center', width: '100%',
-              fontFamily: 'var(--font-syne)', fontWeight: 700, fontSize: 17,
+              fontFamily: 'var(--font-syne)', fontWeight: 700, fontSize: 16,
               color: '#0a0a0f', background: 'linear-gradient(135deg, #a78bfa, #22d3ee)',
               padding: '18px 32px', borderRadius: 12,
               letterSpacing: '-0.01em',
@@ -302,13 +291,9 @@ export default function LandingPage() {
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', zIndex: 1, maxWidth: 720, margin: '0 auto', padding: '0 24px 100px' }}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <span style={{ fontFamily: 'var(--font-space-mono)', fontSize: 11, letterSpacing: '0.06em', color: '#64748b', textTransform: 'uppercase' }}>FAQ</span>
-          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-0.03em', color: '#fff', margin: '12px 0 16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-0.03em', color: '#fff', margin: '0 0 0', transform: 'scaleX(0.88)', transformOrigin: 'center' }}>
             Questions
           </h2>
-          <p style={{ color: '#64748b', fontSize: 16, maxWidth: 420, margin: '0 auto', lineHeight: 1.6 }}>
-            Everything you need to know before you decide.
-          </p>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
