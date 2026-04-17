@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import CheckoutButton from '@/components/CheckoutButton'
 import FooterEmail from '@/components/FooterEmail'
+import Navbar from '@/components/Navbar'
 
 // ─── Section data ────────────────────────────────────────────────────────────
 
@@ -65,27 +66,7 @@ export default function LandingPage() {
       </div>
 
       {/* ── Nav ──────────────────────────────────────────────────────────── */}
-      <nav style={{
-        position: 'sticky', top: 0, zIndex: 50,
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
-        background: 'rgba(10,10,15,0.85)',
-        backdropFilter: 'blur(16px)',
-        WebkitBackdropFilter: 'blur(16px)',
-      }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', height: 60, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ fontFamily: 'var(--font-syne)', fontWeight: 800, fontSize: 17, letterSpacing: '-0.02em', color: '#fff', display: 'inline-block', transform: 'scaleX(0.88)', transformOrigin: 'left' }}>
-            App Building Blueprint
-          </span>
-          <CheckoutButton style={{
-            fontFamily: 'var(--font-syne)', fontSize: 16, fontWeight: 700,
-            color: '#0a0a0f', background: 'linear-gradient(90deg, #a78bfa, #22d3ee)',
-            padding: '8px 20px', borderRadius: 8,
-            letterSpacing: '-0.01em',
-          }}>
-            Get the Blueprint →
-          </CheckoutButton>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '100px 24px 80px' }}>
